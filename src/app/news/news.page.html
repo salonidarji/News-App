@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>news</ion-title>
+    <ion-title>News</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-card *ngFor="let item of myArticles?.articles" (click)="callSingleNews(item)">
+    <ion-img [src]="item.urlToImage"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{item.title}}</ion-card-title>
+    </ion-card-header>
+ </ion-card>
 
 </ion-content>

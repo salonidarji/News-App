@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>news-single</ion-title>
+    <ion-title>{{item.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
+    <ion-card>
+        <ion-img [src]="item.urlToImage"></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{item.title}}</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+         {{item.description}}
+        </ion-card-content>
+     </ion-card>
 </ion-content>
