@@ -26,7 +26,7 @@ export class NewsPage implements OnInit {
     );
   }
 
-  callSingleNews(item) {
+  callSingleNews(item: any) {
     this._data.singleNews(item);
   }
 

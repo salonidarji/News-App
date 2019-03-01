@@ -20,7 +20,7 @@ export class NewsService {
     return this._http.get(`${API_URL}/${url}&apikey=${API_KEY}`);
   }
 
-  singleNews(item) {
+  singleNews(item: any) {
     this.currentArticle = item;
     this.router.navigate(['/news-single']);
 

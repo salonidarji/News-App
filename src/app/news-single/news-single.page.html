@@ -5,11 +5,15 @@
 </ion-header>
 
 <ion-content padding>
-
+    <ion-icon slot="icon-only" name="arrow-back" (click)="callHome()"></ion-icon>
     <ion-card>
         <ion-img [src]="item.urlToImage"></ion-img>
         <ion-card-header>
-          <ion-card-title>{{item.title}}</ion-card-title>
+          <ion-card-title>
+            <font color="#3d76d8" face="Bedrock" size="5%">
+            {{item.title}}
+            </font>
+          </ion-card-title>
         </ion-card-header>
     
         <ion-card-content>

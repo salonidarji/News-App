@@ -4,11 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-card *ngFor="let item of myArticles?.articles" (click)="callSingleNews(item)">
     <ion-img [src]="item.urlToImage"></ion-img>
     <ion-card-header>
-      <ion-card-title>{{item.title}}</ion-card-title>
+      <ion-card-title>
+        <font color="#3d76d8" face="Bedrock" size="5%">
+        {{item.title}}
+        </font>
+      </ion-card-title>
     </ion-card-header>
  </ion-card>
 
